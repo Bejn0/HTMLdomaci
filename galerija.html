@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html id="galos" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+    <title>Cars</title> 
+</head>
+<body>
+    <div class="galerija">
+        <ul class="kontrole">
+            <li class="buttons active" data-filter="all">All</li>
+            <li class="buttons" data-filter="zonda">Zonda</li>
+            <li class="buttons" data-filter="bugatti">Bugatti</li>
+        </ul>
+        <div class="image-container">
+            <a href="slike/zonda1.jpg" class="image zonda">
+                <img src="slike/zonda1.jpg" alt="">
+             </a>
+             <a href="slike/zonda2.jpg" class="image zonda">
+                <img src="slike/zonda2.jpg" alt="">
+             </a>
+             <a href="slike/zonda3.jpg" class="image zonda">
+                <img src="slike/zonda3.jpg" alt="">
+             </a>
+             <a href="slike/zonda4.jpg" class="image zonda">
+                <img src="slike/zonda4.jpg" alt="">
+             </a>
+
+             <a href="slike/b1.jpg" class="image bugatti">
+                <img src="slike/b1.jpg" alt="">
+            </a>
+            <a href="slike/b2.jpg" class="image bugatti">
+                <img src="slike/b2.jpg" alt="">
+            </a>
+            <a href="slike/b4.jpg" class="image bugatti">
+                <img src="slike/b4.jpg" alt="">
+            </a>
+            <a href="slike/b3.jpeg" class="image bugatti">
+                <img src="slike/b3.jpeg" alt="">
+            </a>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.buttons').click(function(){
+                $(this).addClass('active').siblings().removeClass('active');
+                var filter=$(this).attr('data-filter')
+                if(filter=='all'){
+                    $('.image').show(400);
+                }else{
+                    $('.image').not('.'+filter).hide(200);
+                    $('.image').filter('.'+filter).show(400);
+                }
+            });
+
+            $('.galerija').magnificPopup({
+                delegate:'a',
+                type:'image',
+                gallery:{
+                    enabled:true
+                }
+
+            });
+        });
+    </script>
+</body>
+</html>

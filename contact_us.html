@@ -1,0 +1,69 @@
+<html>
+<head>
+    	<meta charset="UTF-8">
+	<meta name="description" content="Sports Cars Community and Information" />
+        <meta name="keywords" content="Pagani, sports cars, cars news, Bugatti" />
+    	<link type="text/css" rel="stylesheet" href="css1.css"/>
+   	<title>Cars</title>
+</head>
+<body>
+<div id="pozadina"><img src="./slike/2020-Lamborghini-Aventador.jpg"></div>
+<div id="header">
+     <p><span id="naziv"> <a href="index.html">Sports cars</a></span></p>
+     <div class="dropdownmeni">
+		<p class="dropbtn">Menu</p>
+		<div class="sadrzaj">
+		  <a href="sajt2.html">Pagani Zonda R 2009</a>
+		  <a href="sajt2_1.html">Bugatti Veyron EB 16.4</a>
+		  <a href="galerija.html">Galerija</a>
+		  <a href="contact_us.html">Kontakt</a>
+		</div>
+	  </div>
+</div>
+<br><br>
+<div id="contact_form">
+	<br>
+	<form name="MojaForma" align="center" onsubmit="return validacijaForme()">
+			<div>
+                            <div>
+                                <label for="name"> Ime </label>
+                            </div>
+                            <div>
+                                <input type="text" id="name" name="name" placeholder="Unesite Vaše ime">
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <label for="email"> E-mail </label>
+                            </div>
+                            <div>
+                                <input type="text" id="email" name="email" placeholder="Unesite Vašu E-mail adresu">
+                            </select>
+                          </div>
+                        </div>
+ 			<div>
+                                <label for="job"> Vi ste? </label>
+                            </div>
+                            <div>
+                                <select name="jobsList" form="forma">
+                                    <option value ="posetilac">Posetilac</option>
+                                    <option value ="firma">Firma</option>
+                                    <option value ="novinar">Novinar</option>
+                                </select>
+                            </div>
+                        <div>
+                            <div>
+                                <label for="subject"> Poruka </label>
+                            </div>
+                            <div>
+                                <textarea name="poruka" placeholder="Ovde ukucajte Vašu poruku" style="height:100px"></textarea>
+                            </div>
+                        </div>
+                        <div>
+                            <input type="submit" value="Submit">
+                        </div>
+	</form>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

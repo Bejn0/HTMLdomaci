@@ -1,0 +1,45 @@
+<html>
+<head>
+    	<meta charset="UTF-8">
+	<meta name="description" content="Sports Cars Community and Information" />
+        <meta name="keywords" content="Pagani, sports cars, cars news, Bugatti" />
+    	<link type="text/css" rel="stylesheet" href="css1.css"/>
+    	<title>Cars</title>
+</head>
+<body>
+<div id="pozadina"><img src="./slike/pozadina2.jpg"></div>
+<div id="header">
+    <p><span id="naziv"> <a  href="index.html">Sports cars</a></span></p>
+    <div class="dropdownmeni">
+		<p class="dropbtn">Menu</p>
+		<div class="sadrzaj">
+		  <a href="sajt2.html">Pagani Zonda R 2009</a>
+		  <a href="sajt2_1.html">Bugatti Veyron EB 16.4</a>
+		  <a href="galerija.html">Galerija</a>
+		  <a href="contact_us.html">Kontakt</a>
+		</div>
+	  </div>
+</div>
+<br><br><br><br>
+<h4 style="color: #e6e6e6" align="middle">Pagani Zonda R 2009</h4>
+<div class="slike" align="middle">
+    <img id="slika1"style="width: 80%; height: 65%" src="./slike/zonda1.jpg" style="width: 80%; height: 70%"/>
+</div>
+<script>
+	let slika=document.getElementById("slika1");
+  slika.addEventListener("mouseover" ,()=>{
+    slika.src='./slike/zonda2.jpg';
+  });
+  slika.addEventListener("mouseout" ,()=>{
+    slika.src='./slike/zonda1.jpg';
+  });
+</script>
+<a href="sajt3.html"><img id="next" src="./slike/button1.png" /></a>
+<h4>
+    Pagani's first model, the Zonda, is propelled by mid-mounted V-12 DOHC engines manufactured by Mercedes-Benz's AMG
+    division.<br><br> The car's design was inspired by jet fighters and the famous Sauber-Mercedes Silver Arrow Group C
+    cars, and features several unique design elements, including its circular four pipe exhaust.
+</h4><br><br>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<html>
+<head>
+   	<meta charset="UTF-8">
+	   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Sports Cars Community and Information" />
+        <meta name="keywords" content="Pagani, sports cars, cars news, Bugatti" />
+    	<link type="text/css" rel="stylesheet" href="css1.css"/>
+    	<title>Cars</title>
+</head>
+<body>
+<div id="pozadina"><img src="./slike/pozadina1.jpg"></div>
+<div id="header">
+     <p><span id="naziv"> <a href="index.html">Sports cars</a></span></p>
+		 <div class="dropdownmeni">
+		<p class="dropbtn">Menu</p>
+		<div class="sadrzaj">
+		  <a href="sajt2.html">Pagani Zonda R 2009</a>
+		  <a href="sajt2_1.html">Bugatti Veyron EB 16.4</a>
+		  <a href="galerija.html">Galerija</a>
+		  <a href="contact_us.html">Kontakt</a>
+		</div>
+	  </div>
+	
+</div>
+<br><br>
+<p id="uvod"><i>
+    Speed, strength, security,<br> aesthetics, comfort,<br> adrenaline, power,<p id="lifestyle">the lifestyle</p>
+</i>
+</p>
+<script>
+	
+	window.addEventListener("click",()=>{
+    let lf=document.getElementById("lifestyle");
+    lf.style.color="blue";
+  });
+  window.addEventListener("dblclick",()=>{
+    let lf=document.getElementById("lifestyle");
+    lf.style.color="red";
+  });
+</script>
+
+<div id="box">
+	<ul z-index="2">
+  	<li><a href="sajt2.html">Pagani Zonda R</a></li>
+ 	<li><a href="sajt2_1.html">Bugatti Veyron EB 16.4</a></li>
+	</ul>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
